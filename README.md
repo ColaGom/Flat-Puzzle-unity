@@ -7,7 +7,7 @@ _http://creativecommons.org/licenses/by/3.0/_
 
 유니티 엔진을 활용하여 제작된 간단한 3-match 형식의 오픈 소스 게임.
 
-[앱 다운로드](https://play.google.com/store/apps/details?id=com.cbs.pang)
+[App Download in PlayStore](https://play.google.com/store/apps/details?id=com.cbs.pang)
 
 ## 개요
 
