@@ -1,6 +1,10 @@
 # Flat puzzle project. 
 _Copyright (c) 2014 ColabearStudio All rights reserved._
 
+_"Carefree" Kevin MacLeod (incompetech.com)._
+_Licensed under Creative Commons: By Attribution 3.0_
+_http://creativecommons.org/licenses/by/3.0/_
+
 유니티 엔진을 활용하여 제작된 간단한 3-match 형식의 오픈 소스 게임.
 
 ## 개요
