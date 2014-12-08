@@ -36,6 +36,7 @@ _http://creativecommons.org/licenses/by/3.0/_
 * 광고적용
 * 레벨시스템적용.
 * 안드로이드 .jar 파일을 활용한 다이얼로그 구현.
+* Xml 파일을 활용한 로컬라이징 구현.(ENG / KOR)
 
 ## 업데이트 예정
 
