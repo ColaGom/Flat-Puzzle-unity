@@ -15,7 +15,7 @@ _Copyright (c) 2014 ColabearStudio All rights reserved._
 
 * 3-match 형식의 기본적인 게임 로직 구현.
 * 대기시 힌트 표시.
-* 초기에 생성된 블럭들을 가지고만 게임진행. 생성, 파괴 X
+* 초기에 생성된 블럭들을 재활용 하여 게임진행. 추가생성 , 파괴 X
 * 더이상 매치가 불가능할경우 전체 블록 재정렬.
 * MatchContainer의 블록 witdh, height값 을 기준으로 camera orthographicSize 셋팅.
 
