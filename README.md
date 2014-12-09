@@ -43,6 +43,8 @@ _Copyright (c) 2014 ColabearStudio All rights reserved._
 ## 프로젝트 확인 방법.
  * 1.Project 다운로드
  * 2.실행후 Mainscene실행 & 확인.
+ * Oncontainer, Offcontainer, colorset 등 핵심 메소드 확인가능할수있도록 gui 구현해두었습니다.
+ * (MatchContainer.Test)
 
 ## 추가 전달사항.
  * 원래 위의 스토어에 사용된 프로젝트를 통으로 올릴예정이였으나. 
