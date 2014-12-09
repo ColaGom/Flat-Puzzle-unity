@@ -33,7 +33,6 @@ namespace cbs.pang.game
         public Camera camera; // 매치화면을 보여줄 카메라 컴포넌트.
         public int width; // 가로 블록 개수
         public int height; // 세로 블럭 개수
-
         public float pad; // 카메라 여백 값.
 
         #endregion
