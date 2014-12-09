@@ -21,6 +21,7 @@ _Copyright (c) 2014 ColabearStudio All rights reserved._
 
 ## 기본로직.
 
+* Palette 클래스에 등록되어있는 색상을 기준으로 블록 생성.
 * 2개의 블록 선택( 드래그 , 클릭 ) 
 * 선택된 2개의 블록 스왑
 * 스왑완료시 변경된 2개의 블록데이터 스왑 , 매칭 체크
@@ -48,6 +49,5 @@ _Copyright (c) 2014 ColabearStudio All rights reserved._
  * 이것저것 라이센스 문제가 많이 보여서 게임로직만 따로 빼서 올립니다.
  * 아주 간단한 로직이긴하나 혹시나 필요한 분이 계실듯하여 올려봅니다.
  
-
 ## 추가 문의
  colabearstudio@gmail.com
