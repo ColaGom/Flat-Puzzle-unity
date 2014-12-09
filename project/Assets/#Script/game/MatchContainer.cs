@@ -34,7 +34,7 @@ namespace cbs.pang.game
         public int width; // 가로 블록 개수
         public int height; // 세로 블럭 개수
 
-        public float pad = .3f; // 카메라 여백 값.
+        public float pad; // 카메라 여백 값.
 
         #endregion
 
@@ -62,17 +62,20 @@ namespace cbs.pang.game
             if (Screen.width > Screen.height)
             {
                 float hRatio = 1; // height / height = 1
-                float wRatio = Screen.width / Screen.height;
+                float wRatio = (float)Screen.width / Screen.height;
 
-                float hViewSize = width / (wRatio * 2);
-                float wViewSize = height / (hRatio * 2);
+                float hViewSize = height / (hRatio * 2);
+                float wViewSize = width / (wRatio * 2);
+
+                Debug.Log("hviewSize :" + hViewSize);
+                Debug.Log("wViewSize :" + wViewSize);
 
                 camera.orthographicSize = hViewSize >= wViewSize ? hViewSize : wViewSize;
                 camera.orthographicSize += pad;
             }
-            else if(Screen.width < Screen.height)
+            else if (Screen.width < Screen.height)
             {
-                float hRatio = Screen.height / Screen.width;
+                float hRatio = (float)Screen.height / Screen.width;
                 float wRatio = 1;
 
                 float hViewSize = width / (wRatio * 2);
@@ -92,7 +95,7 @@ namespace cbs.pang.game
         {
             if (enable)
             {
-                if(Time.time - preMatchTime >= hintDealy)
+                if (Time.time - preMatchTime >= hintDealy)
                 {
                     preMatchTime = Time.time;
                     if (hintBlock && checkMatchAtBlock(hintBlock))
@@ -110,11 +113,12 @@ namespace cbs.pang.game
                 {
                     Vector2 pos = ScreenToWorldPoint(Input.mousePosition);
 
+                    Debug.Log(pos);
 
-                    if (pos.x > -(width / 2) && pos.x < width / 2 && pos.y > -(height / 2) && pos.y < height / 2)
+                    if (pos.x > -(width / 2f) && pos.x < width / 2f && pos.y > -(height / 2f) && pos.y < height / 2f)
                     {
-                        int x = (int)(pos.x + width / 2);
-                        int y = (int)(pos.y + height / 2);
+                        int x = (int)(pos.x + width / 2f);
+                        int y = (int)(pos.y + height / 2f);
                         if (!checkClickAble(x)) return;
                         clickedEvent(x, y);
                     }
@@ -251,7 +255,7 @@ namespace cbs.pang.game
             firBlock = null;
             secBlock = null;
         }
-        
+
         /// <summary>
         /// checked block click able at line(x)
         /// </summary>
@@ -580,11 +584,11 @@ namespace cbs.pang.game
         {
             while (isMoving()) yield return null;
 
-            foreach(Block block in blockList)
+            foreach (Block block in blockList)
             {
                 if (checkMatchAtBlock(block))
                 {
-                    if(hintBlock && hintBlock._State != Block.State.HINT)
+                    if (hintBlock && hintBlock._State != Block.State.HINT)
                         hintBlock = block;
                     yield break;
                 }
